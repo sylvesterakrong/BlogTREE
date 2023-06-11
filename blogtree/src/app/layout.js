@@ -1,7 +1,7 @@
-import { Raleway } from 'next/font/google'
+import { Exo_2} from 'next/font/google'
 import 'bulma'
 
-const inter = Raleway({ subsets: ['latin'] })
+const inter = Exo_2({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'BlogTREE',

@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 const Navbar = () => {
+  
     return (
       <section className="hero is-medium">
         <div className="hero-head">

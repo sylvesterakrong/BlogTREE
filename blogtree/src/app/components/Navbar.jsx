@@ -1,5 +1,7 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import Image from "next/image";
+
 
 const Navbar = () => {
   
@@ -13,11 +15,11 @@ const Navbar = () => {
                     BlogTREE
                   </h1>
                 </div>
-                <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menu">
-                  <span aria-hidden="true"></span>
-                  <span aria-hidden="true"></span>
-                  <span aria-hidden="true"></span>
-                </a>
+                  <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
             </div>
             <div id="menu" className="navbar-menu">
               <div className="navbar-end is-size-5 px-5 py-5">
@@ -33,7 +35,10 @@ const Navbar = () => {
         <div hero-foot >
           <div className="container">
             <figure class="image is-2by1 is-centered pr-0 pl-0">
-              <Image class="has-ratio" width="1000" height="360" src="/assets/heroimage.jpg" frameborder="0" allowfullscreen></Image>
+              <Image 
+              class="has-ratio"
+              alt="" 
+              width="1000" height="360" src="/assets/heroimage.jpg" frameborder="0" allowfullscreen></Image>
             </figure>
           </div>
         </div>

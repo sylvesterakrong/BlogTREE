@@ -1,10 +1,10 @@
 "use client"
 import React, { useState } from "react";
 import Image from "next/image";
-
+import Link from "next/link";
 
 const Navbar = () => {
-  
+
     return (
       <section className="hero is-medium">
         <div className="hero-head">
@@ -15,7 +15,7 @@ const Navbar = () => {
                     BlogTREE
                   </h1>
                 </div>
-                  <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menu">
+                  <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menu" >
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -23,25 +23,15 @@ const Navbar = () => {
             </div>
             <div id="menu" className="navbar-menu">
               <div className="navbar-end is-size-5 px-5 py-5">
-                <a href="#" className="navbar-item">home</a>
-                <a href="#"
-                className="navbar-item">about</a>
-                <a className="navbar-item">profile</a>
+                <Link href="/" className="navbar-item">home</Link>
+                <Link href="/pages/About" className="navbar-item">about</Link>
+                <Link href="/pages/Profile" className="navbar-item">profile</Link>
               </div>
             </div>
           </nav>
         </div>
 
-        <div hero-foot >
-          <div className="container">
-            <figure class="image is-2by1 is-centered pr-0 pl-0">
-              <Image 
-              class="has-ratio"
-              alt="" 
-              width="1000" height="360" src="/assets/heroimage.jpg" frameborder="0" allowfullscreen></Image>
-            </figure>
-          </div>
-        </div>
+        
       </section>
        
     )

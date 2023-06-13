@@ -1,5 +1,7 @@
 import { Exo_2} from 'next/font/google'
 import 'bulma'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const inter = Exo_2({ subsets: ['latin'] })
 
@@ -12,7 +14,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-      {children}</body>
+        <nav>
+          <Navbar/>
+        </nav>
+
+          {children}
+          
+        <footer>
+          <Footer/>
+        </footer>
+      </body>
     </html>
   )
 }

@@ -22,16 +22,11 @@ const Profile = () =>{
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content">
-                                    <p class="title is-4">John Smith</p>
-                                    <p class="subtitle is-6">@blogwriter</p>
+                                    <p class="title is-4">Akrong Sylvester</p>
+                                    <p class="subtitle is-6">@blogwriter
+                                    </p>
                                 </div>
                             </div>
-
-                        <div class="content">
-                            <p class="subtitle is-6"> 
-                            <FontAwesomeIcon icon={faFacebookF} className="icon is-small"/>facebook
-                            </p>
-                        </div>
                         </div>
                     </div>
                 </div>

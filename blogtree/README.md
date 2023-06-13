@@ -18,6 +18,7 @@ BlogTREE is a modern blog website that allows you to create, publish, and explor
  
   - Next.js
   - Bulma CSS framework
+  - Chat gpt : used it to generate the information  (lol)
 
 
 ## Contributing

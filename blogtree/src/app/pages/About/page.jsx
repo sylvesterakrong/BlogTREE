@@ -11,7 +11,7 @@ const About = () =>{
                 alt="" 
                 width="2000" height="360" src="/assets/heroimage.jpg" frameborder="0" allowfullscreen></Image>
                 </figure>
-                </div>
+            </div>
             <div className="content is-size-5 pr-5 mr-5 pl-5 ml-5 mt-5 pt-5">
                 <h1 className="is-size-3 ">
                     BlogTREE

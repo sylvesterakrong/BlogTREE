@@ -114,11 +114,13 @@ const Content = () => {
                 </Link>    
                 </div>
             </div>
-            <Link href="/pages/viewall">
-                <div className=" mt-6 pt-6 has-text-centered">
-                    <button className="button">View More</button>
-                </div>
-            </Link>
+            
+                <p className="has-text-centered ">
+                <Link href="/pages/viewall">
+                    <button className="button mt-6">View More</button>
+                    </Link>
+                </p>
+            
         </div>
         </section>
     )

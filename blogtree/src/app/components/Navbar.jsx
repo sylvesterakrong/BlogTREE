@@ -1,8 +1,4 @@
 "use client"
-import React, { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-
 const Navbar = () => {
    
 
@@ -17,11 +13,11 @@ const Navbar = () => {
                   </h1>
                 </div>
 
-                  <Link role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menu" onClick={showSidebar} >
+                  <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menu" >
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
-                  </Link>
+                  </a>
 
               </div>
 

@@ -3,7 +3,7 @@ import Image from "next/image";
 const About = () =>{
 
     return(
-        <section className="section pt-0 mt-0 pr-0 mr-0 pl-0 pr-0">
+        <section className="section pt-0 mt-0 pr-0 mr-0 pl-0 pr-0 ">
             <div className="container is-fullhd">
                 <figure class="image is-2by1 is-centered">
                 <Image 
@@ -12,7 +12,10 @@ const About = () =>{
                 width="2000" height="360" src="/assets/heroimage.jpg" frameborder="0" allowfullscreen></Image>
                 </figure>
             </div>
-            <div className="content is-size-5 pr-5 mr-5 pl-5 ml-5 mt-5 pt-5">
+            <div className="columns p-5 m-0">
+                <div className="column is-2"></div>
+                <div className="column card">
+                <div className="content is-size-5 p-5 mr-3 ml-3 mt-5 pt-5 ">
                 <h1 className="is-size-3 ">
                     BlogTREE
                 </h1>
@@ -52,21 +55,24 @@ const About = () =>{
                 <p class="title is-size-5">Contributing</p>
                 <div className="content">
                     <p>
-                    Contributions to BlogTREE are always welcome! If you have any ideas, suggestions, or bug fixes, feel free to open an issue or submit a pull request. We appreciate your contributions.
+                    Contributions to BlogTREE are always welcome! If you have any ideas, suggestions, or bug fixes, feel free to open an issue or submit a pull request on Github. We appreciate your contributions.
                     </p>
                 </div>
 
                 <p class="title is-size-5">Contact</p>
                 <div className="content">
                     <p>
-                    If you have any questions or feedback regarding BlogTREE, you can reach out to us at:
+                    If you have any questions or feedback regarding BlogTREE, you can reach out to us at:<br></br>
+                    Email: akrongsylvester@gmail.com
                     </p>
                     <p>
-                    Email: akrongsylvester@gmail.com
-                    Thank you for choosing BlogTREE to express and explore your thoughts and ideas. 
+                    Thank you for choosing BlogTREE to express your thoughts and ideas. 
                     </p>
                     <p class="title is-size-5 my-3">Happy blogging!  ♡ </p>
                 </div>
+            </div>
+                </div>
+                <div className="column is-2"></div>
             </div>
         </section>
 

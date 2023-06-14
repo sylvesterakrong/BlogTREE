@@ -22,15 +22,15 @@ const Content = () => {
             <div className="columns">
                 <div  className="column is-four-fifths is-10">
                     <h2 className="is-size-2 subtitle">
-                        New blogs...
+                    New blogs...
                     </h2>
                 </div>
                 <div  >
                     <div className="is-size-5 mb-5 mx-3">
-                        <a href="#">create blog 
+                        <Link href="/pages/create_blog">create blog 
                          <FontAwesomeIcon 
                         icon={faAdd} className="icon is-small"/>               
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

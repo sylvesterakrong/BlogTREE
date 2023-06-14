@@ -4,9 +4,7 @@ import { faAdd, faClock } from '@fortawesome/free-solid-svg-icons'
 import Image from "next/image";
 import Link from "next/link";
 
-
-const Content = () => {
-
+const viewall = () => {
     return(
         <section className="section pt-0 mt-0 pr-0 mr-0 pl-0 pr-0">
            
@@ -22,16 +20,8 @@ const Content = () => {
             <div className="columns">
                 <div  className="column is-four-fifths is-10">
                     <h2 className="is-size-2 subtitle">
-                    Latest blogs...
+                    Blogs...
                     </h2>
-                </div>
-                <div  >
-                    <div className="is-size-5 mb-5 mx-3">
-                        <Link href="/pages/create_blog">create blog 
-                         <FontAwesomeIcon 
-                        icon={faAdd} className="icon is-small"/>               
-                        </Link>
-                    </div>
                 </div>
             </div>
         
@@ -56,6 +46,22 @@ const Content = () => {
                 </Link>
                 </div>
 
+                <div class="tile is-parent">
+                <Link href="/pages/smartcars_blog">
+                    <article class="tile is-child box">
+                        <div class="card-image">
+                            <figure class="image is-5by4 mb-5 mx-0 my-0">
+                            <Image src="/assets/car.jpg" alt="Placeholder image" width={2000} height={2000}></Image>
+                            </figure>
+                        </div>
+                        <p class="title">The era of smart and electric cars</p>
+                        <div class="content">
+                            <p>Welcome to the era of smart and electric cars, where cutting-edge technology meets sustainable transportation. Discover how these vehicles are reshaping the automotive landscape and propelling us towards a greener future. From advanced connectivity features to zero-emission capabilities, smart and electric cars offer a new paradigm of driving. Uncover the environmental benefits of electric vehicles and their role in combating climate change. Join us as we explore the infrastructure developments and exciting possibilities that lie ahead in this transformative era of smart and electric cars.</p>
+                        </div>
+                        <p className="subtitle has-text-grey-light "><FontAwesomeIcon icon={faClock} className="icon is-small"/> 6 mins read</p>
+                    </article>
+                    </Link>
+                </div>
 
                 <div class="tile is-parent">
                 <Link href="/pages/setup_blog">
@@ -75,7 +81,7 @@ const Content = () => {
                 </div>
             </div>
 
-            <div className="tile is-ancestor">
+            <div className="tile is-ancestor ">
                 <div class="tile is-parent">
                 <Link href="/pages/spaceplane_blog">
                     <article class="tile is-child box">
@@ -113,18 +119,29 @@ const Content = () => {
                     </article>
                 </Link>    
                 </div>
-            </div>
-            <Link href="/pages/viewall">
-                <div className=" mt-6 pt-6 has-text-centered">
-                    <button className="button">View More</button>
+
+                <div class="tile is-parent">
+                <Link href="/pages/stocktrading_blog">
+                    <article class="tile is-child box">
+                        <div class="card-image">
+                            <figure class="image is-5by4 mx-0 ">
+                            <Image src="/assets/stock-trading.jpg" alt="Placeholder image" width={2000} height={2000}></Image>
+                            </figure>
+                        </div>
+                        <p class="title">The stock market and its effect on Tech</p>
+                        <div class="content">
+                            <p>
+                                Explore the intricate relationship between the stock market and the tech industry in this captivating blog. Delve into how fluctuations in the stock market can significantly impact the tech sector, influencing investment decisions, company valuations, and innovation. Join us as we analyze the symbiotic connection between stock market trends and the growth of tech giants. Gain insights into how market volatility can shape the trajectory of emerging technologies and disrupt established players. Discover the intricate dynamics that make the stock market a key player in shaping the future of the tech industry.
+                            </p>
+                        </div>
+                        <p className="subtitle has-text-grey-light"><FontAwesomeIcon icon={faClock} className="icon is-small"/> 6 mins read</p>
+                    </article>
+                </Link>
                 </div>
-            </Link>
+            </div>
         </div>
         </section>
     )
 }
 
-
-
-
-export default Content
+export default viewall
